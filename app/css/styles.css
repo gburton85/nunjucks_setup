@@ -1,0 +1,396 @@
+@import url(https://fonts.googleapis.com/css?family=Patua+One);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+html {
+  position: relative;
+  min-height: 100%; }
+
+body {
+  background: #fff;
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+  padding-bottom: 300px;
+  overflow-x: hidden; }
+
+p {
+  line-height: 1.5; }
+
+h1, h2, h3, h4, h5 {
+  font-family: "Patua One", cursive; }
+
+.nav-trigger {
+  position: fixed;
+  width: 110px;
+  height: 98px;
+  right: 0px;
+  top: 0px;
+  cursor: pointer;
+  z-index: 200;
+  -webkit-transform-origin: 110px 0px;
+  -moz-transform-origin: 110px 0px;
+  -ms-transform-origin: 110px 0px;
+  -o-transform-origin: 110px 0px;
+  transform-origin: 110px 0px;
+  -webkit-transform: scale(0.6);
+  -moz-transform: scale(0.6);
+  -ms-transform: scale(0.6);
+  -o-transform: scale(0.6);
+  transform: scale(0.6);
+  -webkit-transition: background 0.3s linear;
+  -moz-transition: background 0.3s linear;
+  transition: background 0.3s linear; }
+
+.nav-trigger.open {
+  background: #222; }
+
+.nav-trigger.close {
+  background: transparent; }
+
+.line {
+  display: block;
+  position: absolute;
+  width: 80px;
+  height: 8px;
+  background: #fff;
+  left: 15px;
+  -webkit-transform-origin: 0px 4px;
+  -moz-transform-origin: 0px 4px;
+  -ms-transform-origin: 0px 4px;
+  -o-transform-origin: 0px 4px;
+  transform-origin: 0px 4px;
+  -webkit-transition: opacity 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s, -webkit-transform 0.24s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  -moz-transition: opacity 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s, -moz-transform 0.24s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  transition: opacity 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s, transform 0.24s cubic-bezier(0.645, 0.045, 0.355, 1) 0s; }
+
+.line:nth-child(1) {
+  top: 16px; }
+
+.line:nth-child(2) {
+  top: 44px; }
+
+.line:nth-child(3) {
+  top: 72px; }
+
+.close .line:nth-child(1) {
+  -webkit-transform: translateX(11px) rotate(45deg);
+  -moz-transform: translateX(11px) rotate(45deg);
+  -ms-transform: translateX(11px) rotate(45deg);
+  -o-transform: translateX(11px) rotate(45deg);
+  transform: translateX(11px) rotate(45deg); }
+
+.close .line:nth-child(2) {
+  opacity: 0; }
+
+.close .line:nth-child(3) {
+  -webkit-transform: translateX(11px) rotate(-45deg);
+  -moz-transform: translateX(11px) rotate(-45deg);
+  -ms-transform: translateX(11px) rotate(-45deg);
+  -o-transform: translateX(11px) rotate(-45deg);
+  transform: translateX(11px) rotate(-45deg); }
+
+nav {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 100; }
+
+nav.out {
+  pointer-events: none; }
+
+nav.in {
+  pointer-events: auto; }
+
+nav ul li {
+  display: block;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  cursor: pointer; }
+
+nav ul {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  padding: 0; }
+
+nav li {
+  height: 12.5%;
+  position: relative;
+  background: #222;
+  color: #fff;
+  font-family: "Patua One", cursive; }
+  nav li a, nav li a:hover {
+    color: #fff; }
+
+nav li:hover {
+  background: #31353A; }
+
+nav.in li:nth-child(1) {
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0.1s, opacity 0.5s linear 0.1s;
+  -moz-transition: -moz-transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0.1s, opacity 0.5s linear 0.1s;
+  transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0.1s, opacity 0.5s linear 0.1s; }
+
+nav.in li:nth-child(2) {
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0.2s, opacity 0.5s linear 0.2s;
+  -moz-transition: -moz-transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0.2s, opacity 0.5s linear 0.2s;
+  transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0.2s, opacity 0.5s linear 0.2s; }
+
+nav.in li:nth-child(3) {
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0.3s, opacity 0.5s linear 0.3s;
+  -moz-transition: -moz-transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0.3s, opacity 0.5s linear 0.3s;
+  transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0.3s, opacity 0.5s linear 0.3s; }
+
+nav.in li:nth-child(4) {
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0.4s, opacity 0.5s linear 0.4s;
+  -moz-transition: -moz-transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0.4s, opacity 0.5s linear 0.4s;
+  transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0.4s, opacity 0.5s linear 0.4s; }
+
+nav.in li:nth-child(5) {
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s, opacity 0.5s linear 0.5s;
+  -moz-transition: -moz-transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s, opacity 0.5s linear 0.5s;
+  transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s, opacity 0.5s linear 0.5s; }
+
+nav.in li:nth-child(6) {
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0.6s, opacity 0.5s linear 0.6s;
+  -moz-transition: -moz-transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0.6s, opacity 0.5s linear 0.6s;
+  transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0.6s, opacity 0.5s linear 0.6s; }
+
+nav.in li:nth-child(7) {
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0.7s, opacity 0.5s linear 0.7s;
+  -moz-transition: -moz-transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0.7s, opacity 0.5s linear 0.7s;
+  transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0.7s, opacity 0.5s linear 0.7s; }
+
+nav.in li:nth-child(8) {
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0.8s, opacity 0.5s linear 0.8s;
+  -moz-transition: -moz-transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0.8s, opacity 0.5s linear 0.8s;
+  transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0.8s, opacity 0.5s linear 0.8s; }
+
+nav.in li:nth-child(9) {
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0.9s, opacity 0.5s linear 0.9s;
+  -moz-transition: -moz-transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0.9s, opacity 0.5s linear 0.9s;
+  transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0.9s, opacity 0.5s linear 0.9s; }
+
+nav.in li:nth-child(10) {
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) 1s, opacity 0.5s linear 1s;
+  -moz-transition: -moz-transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s, opacity 0.5s linear 1s;
+  transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) 1s, opacity 0.5s linear 1s; }
+
+nav.out li:nth-child(10) {
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0s, opacity 0.3s linear 0s;
+  -moz-transition: -moz-transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0s, opacity 0.3s linear 0s;
+  transition: transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0s, opacity 0.3s linear 0s; }
+
+nav.out li:nth-child(9) {
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.2s, opacity 0.3s linear 0.2s;
+  -moz-transition: -moz-transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0s, opacity 0.3s linear 0.2s;
+  transition: transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.2s, opacity 0.3s linear 0.2s; }
+
+nav.out li:nth-child(8) {
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.05s, opacity 0.3s linear 0.05s;
+  -moz-transition: -moz-transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.05s, opacity 0.3s linear 0.05s;
+  transition: transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.05s, opacity 0.3s linear 0.05s; }
+
+nav.out li:nth-child(7) {
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.1s, opacity 0.3s linear 0.1s;
+  -moz-transition: -moz-transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.1s, opacity 0.3s linear 0.1s;
+  transition: transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.1s, opacity 0.3s linear 0.1s; }
+
+nav.out li:nth-child(6) {
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.15s, opacity 0.3s linear 0.15s;
+  -moz-transition: -moz-transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.15s, opacity 0.3s linear 0.15s;
+  transition: transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.15s, opacity 0.3s linear 0.15s; }
+
+nav.out li:nth-child(5) {
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.2s, opacity 0.3s linear 0.2s;
+  -moz-transition: -moz-transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.2s, opacity 0.3s linear 0.2s;
+  transition: transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.2s, opacity 0.3s linear 0.2s; }
+
+nav.out li:nth-child(4) {
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.25s, opacity 0.3s linear 0.25s;
+  -moz-transition: -moz-transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.25s, opacity 0.3s linear 0.25s;
+  transition: transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.25s, opacity 0.3s linear 0.25s; }
+
+nav.out li:nth-child(3) {
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.3s, opacity 0.3s linear 0.3s;
+  -moz-transition: -moz-transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.3s, opacity 0.3s linear 0.3s;
+  transition: transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.3s, opacity 0.3s linear 0.3s; }
+
+nav.out li:nth-child(2) {
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.35s, opacity 0.3s linear 0.35s;
+  -moz-transition: -moz-transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.35s, opacity 0.3s linear 0.35s;
+  transition: transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.35s, opacity 0.3s linear 0.35s; }
+
+nav.out li:nth-child(1) {
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.4s, opacity 0.3s linear 0.4s;
+  -moz-transition: -moz-transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.4s, opacity 0.3s linear 0.4s;
+  transition: transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.4s, opacity 0.3s linear 0.4s; }
+
+nav.out li {
+  -webkit-transform: translateY(300%);
+  -moz-transform: translateY(300%);
+  -ms-transform: translateY(300%);
+  -o-transform: translateY(300%);
+  transform: translateY(300%);
+  opacity: 0; }
+
+nav.in li {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 1; }
+
+.nav-label {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  height: 16px;
+  top: 50%;
+  margin-top: -8px;
+  text-transform: uppercase; }
+
+.header {
+  background: #31353A;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/bg.jpg);
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  top: 0px; }
+  .header h1 {
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    margin: 0;
+    font-family: "Patua One", cursive;
+    text-align: center;
+    display: block;
+    top: 45%;
+    font-size: 5em; }
+  .header a:hover, .header a:visited, .header a:active, .header a:focus {
+    color: #fff; }
+
+@media (min-width: 1600px) {
+  .header h1 {
+    font-size: 7em; } }
+
+.scrolly {
+  position: absolute;
+  bottom: 0;
+  left: 48%;
+  color: #fff;
+  padding: 10px; }
+  .scrolly :hover {
+    color: #CCAC00; }
+  .scrolly :visited, .scrolly :active, .scrolly :focus {
+    color: #fff; }
+
+.subHeader {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/bg.jpg);
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 200px;
+  top: 0px; }
+
+section h2 {
+  margin-bottom: 1.5em; }
+
+.style1 {
+  padding: 5% 10%;
+  text-align: center; }
+  .style1 h5, .style1 p {
+    max-width: 1000px;
+    margin: 0 auto;
+    line-height: 1.5em;
+    padding-bottom: .5em; }
+
+.style2 {
+  background: #eee; }
+  .style2 h5, .style2 p {
+    max-width: 1000px;
+    margin: 0 auto;
+    line-height: 1.5em; }
+
+.masonry {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #31353A; }
+  .masonry__item {
+    height: 30%;
+    width: calc(100% / 3); }
+  .masonry img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    filter: grayscale(1);
+    cursor: pointer;
+    transition: filter 1s ease-out; }
+  .masonry img:hover {
+    filter: grayscale(0); }
+
+@supports (display: grid) {
+  .masonry {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(8, 200px);
+    grid-auto-flow: dense; }
+    .masonry__item {
+      background: rgba(0, 0, 0, 0.25);
+      height: auto;
+      width: auto; }
+      .masonry__item--1, .masonry__item--11 {
+        grid-column-end: span 2;
+        grid-row-end: span 2; }
+      .masonry__item--4, .masonry__item--6, .masonry__item--7, .masonry__item--9, .masonry__item--15 {
+        grid-column-end: span 1;
+        grid-row-end: span 2; }
+      .masonry__item--5 {
+        grid-column-end: span 2;
+        grid-row-end: span 1; }
+  @media screen and (min-width: 800px) {
+    .masonry {
+      grid-template-columns: repeat(3, 1fr); } }
+  @media screen and (min-width: 1000px) {
+    .masonry {
+      grid-template-columns: repeat(4, 1fr); } }
+  @media screen and (min-width: 1200px) {
+    .masonry {
+      grid-template-columns: repeat(5, 1fr); } } }
+
+footer {
+  height: 300px;
+  background: #31353A;
+  font-size: 12px;
+  color: #CCC;
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
+  footer .fa {
+    color: #ccc;
+    padding: 5px; }
+  footer .row {
+    padding: 5% 10%;
+    color: #FFF;
+    font-size: 2.125rem; }
+
+article {
+  padding: 5% 10%;
+  max-width: 1200px;
+  margin: 0 auto; }
+  article .list {
+    padding-top: 1em; }
+
+.larger {
+  font-size: 1.3em;
+  padding-top: 1em;
+  padding-bottom: 1em; }
+
+.blog {
+  padding-top: 2em; }
+
+.video video {
+  padding-top: 3em;
+  padding-bottom: 2em;
+  width: 80%; }

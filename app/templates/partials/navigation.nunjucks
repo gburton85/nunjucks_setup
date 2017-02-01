@@ -1,0 +1,20 @@
+<!-- navigation.nunjucks -->
+<!--nav-->
+  <div id="nav-trigger" class="nav-trigger open">
+    <span class="line"></span>
+    <span class="line"></span>
+    <span class="line"></span>
+  </div>
+  <nav id="nav" class="out">
+    <ul>
+      <li><a href="index.html"><span class="nav-label">Home</span></a></li>
+      <li><a href="sub1.html"><span class="nav-label">Sub 1</span></a></li>
+      <li><a href="sub2.html"><span class="nav-label">Sub 2</span></a></li>
+      <li><a href="sub3.html"><span class="nav-label">Sub 3</span></a></li>
+      <li><a href="sub4.html"><span class="nav-label">Sub 4</span></a></li>
+      <li><a href="sub5.html"><span class="nav-label">Sub 5</span></a></li>
+      <li><a href="sub6.html"><span class="nav-label">Sub 6</span></a></li>
+      <li><a href="sub7.html"><span class="nav-label">Sub 7</span></a></li>
+
+    </ul>
+  </nav><!--end nav-->

@@ -1,0 +1,71 @@
+<!-- index.nunjucks -->
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+<!-- Adds the navigation partial -->
+{% include "partials/navigation.nunjucks" %}
+
+<!--header-->
+  <section id="header" class="header">
+    <h1 id="heading">Get Ahead</h1>
+       <a href="#one" class="scrolly"><i class="fa fa-angle-down fa-2x"></i></a>
+  </section><!--end header-->
+
+<section id="one" class="style1">
+  <h2>Get Ahead, Get Started, on Your Career Journey</h2>
+
+  <h5>Si meliora dies, ut vina, poemata reddit, scire velim, chartis pretium quotus arroget annus. scriptor abhinc annos centum qui decidit, inter perfectos veteresque referri debet an inter vilis atque novos?
+  </h5>
+  <p>Excludat iurgia finis, “Est vetus atque probus, centum qui perficit annos.” Quid, qui deperiit minor uno mense vel anno, inter quos referendus erit?
+  </p>
+  <p>Quaedam nimis antique, si peraque dure dicere credit eos, ignave multa fatetur, et sapit et mecum facit et Iova iudicat aequo.
+Non equidem insector delendave carmina Livi esse reor, memini quae plagosum mihi parvo Orbilium dictare; sed emendata videri.
+  </p>
+</section>
+
+<section class="style1 style2">
+  <h4>It’s never too early to start your career journey</h4>
+  <p><em>“Si meliora dies, ut vina, poemata reddit, scire velim, chartis pretium quotus arroget annus. scriptor abhinc annos centum qui decidit.” Name of student
+  </em></p>
+</section>
+
+<section class="style1">
+  <h2>Getting Started</h2>
+  <p>Si meliora dies, ut vina, poemata reddit, scire velim, chartis pretium quotus arroget annus. scriptor abhinc annos centum qui decidit.
+  </p>
+</section>
+
+<section class="grid">
+  <div class="masonry">
+  <div class="masonry__item masonry__item--1">
+    <img src="https://placeimg.com/640/480/nature"/>
+  </div>
+  <div class="masonry__item masonry__item--2">
+    <img src="https://placeimg.com/640/480/animals"/>
+  </div>
+  <div class="masonry__item masonry__item--3">
+    <img src="https://placeimg.com/640/480/tech"/>
+  </div>
+  <div class="masonry__item masonry__item--4">
+    <img src="https://placeimg.com/640/480/people"/>
+  </div>
+  <div class="masonry__item masonry__item--5">
+    <img src="https://placeimg.com/640/480/arch"/>
+  </div>
+  <div class="masonry__item masonry__item--6">
+    <img src="https://placeimg.com/640/480/nature"/>
+  </div>
+  <div class="masonry__item masonry__item--7">
+    <img src="https://placeimg.com/540/380/animals"/>
+  </div>
+  <div class="masonry__item masonry__item--8">
+  <img src="https://placeimg.com/540/380/tech"/>
+  </div>
+  <div class="masonry__item masonry__item--9">
+    <img src="https://placeimg.com/540/380/people"/>
+  </div>
+
+</div>
+</section>
+
+{% endblock %}
